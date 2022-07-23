@@ -19,4 +19,6 @@ const imageItem = images
   .map((image) => `<li class="gallery-item"><img src="${image.url}" alt="${image.alt}"></li>`)
   .join("");
 
-gallery.insertAdjacentHTML("afterbegin",imageItem);
+gallery.insertAdjacentHTML("afterbegin", imageItem);
+gallery.style.listStyle = "none";
+
